@@ -25,3 +25,33 @@ public class Classes {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+//
+///    public boolean placeStudentInClassroom (Student student){
+////
+////        if (student.getStack().equalsIgnoreCase("java")) {
+////
+////            javaStudents.add(student);
+////
+////            System.out.println("==============java students are : {}" + javaStudents.size());
+////
+////            students.add((javaStudents);
+////
+////            System.out.println("============== students are : {}" + students.size());
+////
+////            return true;
+////        }
+////        return false;
+////    }
+//
+//
+//        }

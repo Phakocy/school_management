@@ -7,16 +7,13 @@ public class Principal extends Person implements IExtraDetails {
 
     public final List<Applicant> applicants = new ArrayList<>();
     public final List<Student> students = new ArrayList<>();
-//    public final List<Student> javaStudents = new ArrayList<>();
-//    public final List<Student> iosstudents = new ArrayList<>();
-
 
 
     public Principal(String collegeName, String firstName, String lastName, String gender) {
         super(collegeName, firstName, lastName, gender);
     }
 
-    public boolean admitApplicant (Applicant applicant) {
+    public boolean admitApplicant(Applicant applicant) {
 
         int APPLICANT_GRADE_LIMIT = 50;
         int APPLICANT_AGE_LIMIT = 18;
@@ -29,17 +26,17 @@ public class Principal extends Person implements IExtraDetails {
 
         } else {
 
-            System.out.println("Applicant " + applicant.getFullName() + " with age "+ applicant.getAge() + " and score " + applicant.getGrade() + " was not admitted");
+            System.out.println("Applicant " + applicant.getFullName() + " with age " + applicant.getAge() + " and score " + applicant.getGrade() + " was not admitted");
         }
 
-        System.out.println("New number of applicant equals: " +  applicants.size());
+        System.out.println("New number of applicant equals: " + applicants.size());
 
         return true;
     }
 
-    public boolean expelStudent( Student student) {
+    public boolean expelStudent(Student student) {
 
-        if(student.isFvckUp()){
+        if (student.isFvckUp()) {
 
             students.remove(student);
 
@@ -59,7 +56,7 @@ public class Principal extends Person implements IExtraDetails {
 
     @Override
     public String role() {
-        String role =  "Principal";
+        String role = "Principal";
 
         return role;
     }
@@ -73,23 +70,4 @@ public class Principal extends Person implements IExtraDetails {
     public void department() {
         System.out.println("Admin");
     }
-
-//    public boolean placeStudentInClassroom (Student student){
-//
-//        if (student.getStack().equalsIgnoreCase("java")) {
-//
-//            javaStudents.add(student);
-//
-//            System.out.println("==============java students are : {}" + javaStudents.size());
-//
-//            students.add((javaStudents);
-//
-//            System.out.println("============== students are : {}" + students.size());
-//
-//            return true;
-//        }
-//        return false;
-//    }
-
-
 }
