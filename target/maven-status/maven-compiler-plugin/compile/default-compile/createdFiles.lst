@@ -1,0 +1,9 @@
+com/model/Main.class
+com/model/Principal.class
+com/model/Course.class
+com/model/Applicant.class
+com/model/Teacher.class
+com/model/Student.class
+com/model/IExtraDetails.class
+com/model/Classes.class
+com/model/Person.class
